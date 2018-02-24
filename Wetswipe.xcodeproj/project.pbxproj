@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E98301512041544B0053254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301502041544B0053254B /* AppDelegate.swift */; };
+		E98301532041544B0053254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301522041544B0053254B /* ViewController.swift */; };
+		E98301562041544B0053254B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98301542041544B0053254B /* Main.storyboard */; };
+		E98301582041544B0053254B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98301572041544B0053254B /* Assets.xcassets */; };
+		E983015B2041544B0053254B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98301592041544B0053254B /* LaunchScreen.storyboard */; };
+		E98301662041544B0053254B /* WetswipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301652041544B0053254B /* WetswipeTests.swift */; };
+		E98301712041544B0053254B /* WetswipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301702041544B0053254B /* WetswipeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E98301622041544B0053254B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98301452041544B0053254B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E983014C2041544B0053254B;
+			remoteInfo = Wetswipe;
+		};
+		E983016D2041544B0053254B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98301452041544B0053254B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E983014C2041544B0053254B;
+			remoteInfo = Wetswipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E983014D2041544B0053254B /* Wetswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wetswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98301502041544B0053254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E98301522041544B0053254B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E98301552041544B0053254B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E98301572041544B0053254B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E983015A2041544B0053254B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E983015C2041544B0053254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98301612041544B0053254B /* WetswipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetswipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98301652041544B0053254B /* WetswipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetswipeTests.swift; sourceTree = "<group>"; };
+		E98301672041544B0053254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E983016C2041544B0053254B /* WetswipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetswipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98301702041544B0053254B /* WetswipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetswipeUITests.swift; sourceTree = "<group>"; };
+		E98301722041544B0053254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E983014A2041544B0053254B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E983015E2041544B0053254B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98301692041544B0053254B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E98301442041544B0053254B = {
+			isa = PBXGroup;
+			children = (
+				E983014F2041544B0053254B /* Wetswipe */,
+				E98301642041544B0053254B /* WetswipeTests */,
+				E983016F2041544B0053254B /* WetswipeUITests */,
+				E983014E2041544B0053254B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E983014E2041544B0053254B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E983014D2041544B0053254B /* Wetswipe.app */,
+				E98301612041544B0053254B /* WetswipeTests.xctest */,
+				E983016C2041544B0053254B /* WetswipeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E983014F2041544B0053254B /* Wetswipe */ = {
+			isa = PBXGroup;
+			children = (
+				E98301502041544B0053254B /* AppDelegate.swift */,
+				E98301522041544B0053254B /* ViewController.swift */,
+				E98301542041544B0053254B /* Main.storyboard */,
+				E98301572041544B0053254B /* Assets.xcassets */,
+				E98301592041544B0053254B /* LaunchScreen.storyboard */,
+				E983015C2041544B0053254B /* Info.plist */,
+			);
+			path = Wetswipe;
+			sourceTree = "<group>";
+		};
+		E98301642041544B0053254B /* WetswipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E98301652041544B0053254B /* WetswipeTests.swift */,
+				E98301672041544B0053254B /* Info.plist */,
+			);
+			path = WetswipeTests;
+			sourceTree = "<group>";
+		};
+		E983016F2041544B0053254B /* WetswipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E98301702041544B0053254B /* WetswipeUITests.swift */,
+				E98301722041544B0053254B /* Info.plist */,
+			);
+			path = WetswipeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E983014C2041544B0053254B /* Wetswipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98301752041544B0053254B /* Build configuration list for PBXNativeTarget "Wetswipe" */;
+			buildPhases = (
+				E98301492041544B0053254B /* Sources */,
+				E983014A2041544B0053254B /* Frameworks */,
+				E983014B2041544B0053254B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wetswipe;
+			productName = Wetswipe;
+			productReference = E983014D2041544B0053254B /* Wetswipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E98301602041544B0053254B /* WetswipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98301782041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeTests" */;
+			buildPhases = (
+				E983015D2041544B0053254B /* Sources */,
+				E983015E2041544B0053254B /* Frameworks */,
+				E983015F2041544B0053254B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98301632041544B0053254B /* PBXTargetDependency */,
+			);
+			name = WetswipeTests;
+			productName = WetswipeTests;
+			productReference = E98301612041544B0053254B /* WetswipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E983016B2041544B0053254B /* WetswipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E983017B2041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeUITests" */;
+			buildPhases = (
+				E98301682041544B0053254B /* Sources */,
+				E98301692041544B0053254B /* Frameworks */,
+				E983016A2041544B0053254B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E983016E2041544B0053254B /* PBXTargetDependency */,
+			);
+			name = WetswipeUITests;
+			productName = WetswipeUITests;
+			productReference = E983016C2041544B0053254B /* WetswipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E98301452041544B0053254B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Adrià Bosch Saez";
+				TargetAttributes = {
+					E983014C2041544B0053254B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E98301602041544B0053254B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E983014C2041544B0053254B;
+					};
+					E983016B2041544B0053254B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E983014C2041544B0053254B;
+					};
+				};
+			};
+			buildConfigurationList = E98301482041544B0053254B /* Build configuration list for PBXProject "Wetswipe" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E98301442041544B0053254B;
+			productRefGroup = E983014E2041544B0053254B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E983014C2041544B0053254B /* Wetswipe */,
+				E98301602041544B0053254B /* WetswipeTests */,
+				E983016B2041544B0053254B /* WetswipeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E983014B2041544B0053254B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E983015B2041544B0053254B /* LaunchScreen.storyboard in Resources */,
+				E98301582041544B0053254B /* Assets.xcassets in Resources */,
+				E98301562041544B0053254B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E983015F2041544B0053254B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E983016A2041544B0053254B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E98301492041544B0053254B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98301532041544B0053254B /* ViewController.swift in Sources */,
+				E98301512041544B0053254B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E983015D2041544B0053254B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98301662041544B0053254B /* WetswipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98301682041544B0053254B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98301712041544B0053254B /* WetswipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E98301632041544B0053254B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E983014C2041544B0053254B /* Wetswipe */;
+			targetProxy = E98301622041544B0053254B /* PBXContainerItemProxy */;
+		};
+		E983016E2041544B0053254B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E983014C2041544B0053254B /* Wetswipe */;
+			targetProxy = E983016D2041544B0053254B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E98301542041544B0053254B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E98301552041544B0053254B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E98301592041544B0053254B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E983015A2041544B0053254B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E98301732041544B0053254B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E98301742041544B0053254B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E98301762041544B0053254B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wetswipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.Wetswipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E98301772041544B0053254B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wetswipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.Wetswipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E98301792041544B0053254B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetswipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.WetswipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wetswipe.app/Wetswipe";
+			};
+			name = Debug;
+		};
+		E983017A2041544B0053254B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetswipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.WetswipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wetswipe.app/Wetswipe";
+			};
+			name = Release;
+		};
+		E983017C2041544B0053254B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetswipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.WetswipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wetswipe;
+			};
+			name = Debug;
+		};
+		E983017D2041544B0053254B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WetswipeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LaSalle.WetswipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wetswipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E98301482041544B0053254B /* Build configuration list for PBXProject "Wetswipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98301732041544B0053254B /* Debug */,
+				E98301742041544B0053254B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98301752041544B0053254B /* Build configuration list for PBXNativeTarget "Wetswipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98301762041544B0053254B /* Debug */,
+				E98301772041544B0053254B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98301782041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98301792041544B0053254B /* Debug */,
+				E983017A2041544B0053254B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E983017B2041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E983017C2041544B0053254B /* Debug */,
+				E983017D2041544B0053254B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E98301452041544B0053254B /* Project object */;
+}
