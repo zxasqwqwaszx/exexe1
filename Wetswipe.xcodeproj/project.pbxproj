@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01BB207FEABD53088120154D /* Pods_WetswipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2221179C7AB9D1E57C8FE /* Pods_WetswipeUITests.framework */; };
+		B541DD9B74B8BD8C09B5E626 /* Pods_Wetswipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D489C07748882A0DB47024 /* Pods_Wetswipe.framework */; };
+		D21ADF360C610BB3CD4ABB9B /* Pods_WetswipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BFC091520E4C3D13CF1824 /* Pods_WetswipeTests.framework */; };
+		E96190942042F1B900923242 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96190932042F1B900923242 /* DiscoveryController.swift */; };
+		E9619098204320EE00923242 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9619097204320EE00923242 /* EditProfileController.swift */; };
+		E961909D204361F700923242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909C204361F700923242 /* User.swift */; };
+		E961909F204370B300923242 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909E204370B300923242 /* ProfileController.swift */; };
+		E96190A1204370CD00923242 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96190A0204370CD00923242 /* SettingsController.swift */; };
 		E98301512041544B0053254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301502041544B0053254B /* AppDelegate.swift */; };
 		E98301532041544B0053254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301522041544B0053254B /* ViewController.swift */; };
 		E98301562041544B0053254B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98301542041544B0053254B /* Main.storyboard */; };
@@ -14,6 +22,8 @@
 		E983015B2041544B0053254B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98301592041544B0053254B /* LaunchScreen.storyboard */; };
 		E98301662041544B0053254B /* WetswipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301652041544B0053254B /* WetswipeTests.swift */; };
 		E98301712041544B0053254B /* WetswipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301702041544B0053254B /* WetswipeUITests.swift */; };
+		E983017F204155600053254B /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E983017E2041555F0053254B /* RegisterController.swift */; };
+		E983018220415BFF0053254B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E983018120415BFF0053254B /* LoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38E3A642E5919C7F946DC488 /* Pods-WetswipeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetswipeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WetswipeTests/Pods-WetswipeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BAB8FD25B1E669562B9CCCF /* Pods-Wetswipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wetswipe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wetswipe/Pods-Wetswipe.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3CC1EF1462E5A3F9322985 /* Pods-WetswipeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetswipeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WetswipeUITests/Pods-WetswipeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD94823B88DC4EB4CC5B19D /* Pods-WetswipeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetswipeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WetswipeUITests/Pods-WetswipeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2BFC091520E4C3D13CF1824 /* Pods_WetswipeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetswipeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5D82EBA5F7A1942A1EF660 /* Pods-Wetswipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wetswipe.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wetswipe/Pods-Wetswipe.release.xcconfig"; sourceTree = "<group>"; };
+		DE6502CBC415C5F5CAE4DF94 /* Pods-WetswipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetswipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WetswipeTests/Pods-WetswipeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0D489C07748882A0DB47024 /* Pods_Wetswipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wetswipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C2221179C7AB9D1E57C8FE /* Pods_WetswipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetswipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96190932042F1B900923242 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
+		E9619097204320EE00923242 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		E961909C204361F700923242 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E961909E204370B300923242 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E96190A0204370CD00923242 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E983014D2041544B0053254B /* Wetswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wetswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98301502041544B0053254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E98301522041544B0053254B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +71,8 @@
 		E983016C2041544B0053254B /* WetswipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetswipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98301702041544B0053254B /* WetswipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetswipeUITests.swift; sourceTree = "<group>"; };
 		E98301722041544B0053254B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E983017E2041555F0053254B /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		E983018120415BFF0053254B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B541DD9B74B8BD8C09B5E626 /* Pods_Wetswipe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21ADF360C610BB3CD4ABB9B /* Pods_WetswipeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +96,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BB207FEABD53088120154D /* Pods_WetswipeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83CB046E31596F8938DEFF05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BAB8FD25B1E669562B9CCCF /* Pods-Wetswipe.debug.xcconfig */,
+				BD5D82EBA5F7A1942A1EF660 /* Pods-Wetswipe.release.xcconfig */,
+				38E3A642E5919C7F946DC488 /* Pods-WetswipeTests.debug.xcconfig */,
+				DE6502CBC415C5F5CAE4DF94 /* Pods-WetswipeTests.release.xcconfig */,
+				8C3CC1EF1462E5A3F9322985 /* Pods-WetswipeUITests.debug.xcconfig */,
+				8DD94823B88DC4EB4CC5B19D /* Pods-WetswipeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E961909920435C0300923242 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E961909C204361F700923242 /* User.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
 		E98301442041544B0053254B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				E98301642041544B0053254B /* WetswipeTests */,
 				E983016F2041544B0053254B /* WetswipeUITests */,
 				E983014E2041544B0053254B /* Products */,
+				83CB046E31596F8938DEFF05 /* Pods */,
+				F66E5036A758BF80FD444323 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +149,8 @@
 		E983014F2041544B0053254B /* Wetswipe */ = {
 			isa = PBXGroup;
 			children = (
+				E961909920435C0300923242 /* models */,
+				E9830180204155730053254B /* controllers */,
 				E98301502041544B0053254B /* AppDelegate.swift */,
 				E98301522041544B0053254B /* ViewController.swift */,
 				E98301542041544B0053254B /* Main.storyboard */,
@@ -125,6 +179,29 @@
 			path = WetswipeUITests;
 			sourceTree = "<group>";
 		};
+		E9830180204155730053254B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E983018120415BFF0053254B /* LoginController.swift */,
+				E983017E2041555F0053254B /* RegisterController.swift */,
+				E96190932042F1B900923242 /* DiscoveryController.swift */,
+				E9619097204320EE00923242 /* EditProfileController.swift */,
+				E961909E204370B300923242 /* ProfileController.swift */,
+				E96190A0204370CD00923242 /* SettingsController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F66E5036A758BF80FD444323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0D489C07748882A0DB47024 /* Pods_Wetswipe.framework */,
+				B2BFC091520E4C3D13CF1824 /* Pods_WetswipeTests.framework */,
+				E2C2221179C7AB9D1E57C8FE /* Pods_WetswipeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98301752041544B0053254B /* Build configuration list for PBXNativeTarget "Wetswipe" */;
 			buildPhases = (
+				4D13495336B5B25FE1518437 /* [CP] Check Pods Manifest.lock */,
 				E98301492041544B0053254B /* Sources */,
 				E983014A2041544B0053254B /* Frameworks */,
 				E983014B2041544B0053254B /* Resources */,
+				1632C56E74945606732B3DD0 /* [CP] Embed Pods Frameworks */,
+				86D1C851F9942519A8C3E61C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E98301782041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeTests" */;
 			buildPhases = (
+				78F53B5C48EC8085AB39FEAD /* [CP] Check Pods Manifest.lock */,
 				E983015D2041544B0053254B /* Sources */,
 				E983015E2041544B0053254B /* Frameworks */,
 				E983015F2041544B0053254B /* Resources */,
+				348FDA302884820B16FC587E /* [CP] Embed Pods Frameworks */,
+				BCA84CEDE39A54E1E6AC613C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E983017B2041544B0053254B /* Build configuration list for PBXNativeTarget "WetswipeUITests" */;
 			buildPhases = (
+				1386B3245510F9F6CE88B58A /* [CP] Check Pods Manifest.lock */,
 				E98301682041544B0053254B /* Sources */,
 				E98301692041544B0053254B /* Frameworks */,
 				E983016A2041544B0053254B /* Resources */,
+				1C419BEC0DDE743C728AF3C6 /* [CP] Embed Pods Frameworks */,
+				F91AFB54E2BE030E363E2700 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +340,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1386B3245510F9F6CE88B58A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WetswipeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1632C56E74945606732B3DD0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wetswipe/Pods-Wetswipe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wetswipe/Pods-Wetswipe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C419BEC0DDE743C728AF3C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WetswipeUITests/Pods-WetswipeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		348FDA302884820B16FC587E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WetswipeTests/Pods-WetswipeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D13495336B5B25FE1518437 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wetswipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F53B5C48EC8085AB39FEAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WetswipeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D1C851F9942519A8C3E61C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wetswipe/Pods-Wetswipe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA84CEDE39A54E1E6AC613C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WetswipeTests/Pods-WetswipeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F91AFB54E2BE030E363E2700 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WetswipeUITests/Pods-WetswipeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E98301492041544B0053254B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96190A1204370CD00923242 /* SettingsController.swift in Sources */,
+				E96190942042F1B900923242 /* DiscoveryController.swift in Sources */,
+				E9619098204320EE00923242 /* EditProfileController.swift in Sources */,
 				E98301532041544B0053254B /* ViewController.swift in Sources */,
+				E983018220415BFF0053254B /* LoginController.swift in Sources */,
 				E98301512041544B0053254B /* AppDelegate.swift in Sources */,
+				E983017F204155600053254B /* RegisterController.swift in Sources */,
+				E961909D204361F700923242 /* User.swift in Sources */,
+				E961909F204370B300923242 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +671,7 @@
 		};
 		E98301762041544B0053254B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BAB8FD25B1E669562B9CCCF /* Pods-Wetswipe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +686,7 @@
 		};
 		E98301772041544B0053254B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5D82EBA5F7A1942A1EF660 /* Pods-Wetswipe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +701,7 @@
 		};
 		E98301792041544B0053254B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E3A642E5919C7F946DC488 /* Pods-WetswipeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +718,7 @@
 		};
 		E983017A2041544B0053254B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE6502CBC415C5F5CAE4DF94 /* Pods-WetswipeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +735,7 @@
 		};
 		E983017C2041544B0053254B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3CC1EF1462E5A3F9322985 /* Pods-WetswipeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +751,7 @@
 		};
 		E983017D2041544B0053254B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DD94823B88DC4EB4CC5B19D /* Pods-WetswipeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

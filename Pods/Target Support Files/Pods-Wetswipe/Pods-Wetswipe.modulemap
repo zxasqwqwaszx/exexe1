@@ -1,0 +1,6 @@
+framework module Pods_Wetswipe {
+  umbrella header "Pods-Wetswipe-umbrella.h"
+
+  export *
+  module * { export * }
+}

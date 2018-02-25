@@ -1,0 +1,20 @@
+PODS:
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
+  - pop (1.0.10)
+  - SDWebImage (4.3.0):
+    - SDWebImage/Core (= 4.3.0)
+  - SDWebImage/Core (4.3.0)
+
+DEPENDENCIES:
+  - Koloda
+  - SDWebImage (~> 4.0)
+
+SPEC CHECKSUMS:
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+
+PODFILE CHECKSUM: 8a75478a5f78ad6e5e717758ae0f405ab6710a2c
+
+COCOAPODS: 1.4.0
