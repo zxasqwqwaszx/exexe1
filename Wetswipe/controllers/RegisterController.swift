@@ -23,7 +23,6 @@ class RegisterController: UIViewController {
             let password2 = passwordConfirmText.text {
             
             if email.isEmpty {
-                
                  showAlert(message: "Email can't be empty")
                 return
             }

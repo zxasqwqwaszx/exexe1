@@ -20,4 +20,17 @@ class User {
         self.photos = photos
     }
     
+    struct UserCredentials: Decodable {
+        
+        let email: String
+        
+        let password: String
+    }
+    
+    struct JWT: Decodable {
+        
+        let message: String
+        let jwt: String
+    }
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-import Koloda
+//import Koloda
 import SDWebImage
 
 class DiscoveryController: UIViewController {
@@ -26,8 +26,8 @@ class DiscoveryController: UIViewController {
     }
     
     @IBAction func likeClick() {
-        
-        nextUser()
+        searchUsers()
+        //nextUser()
     }
     
     func nextUser() {
@@ -67,6 +67,47 @@ class DiscoveryController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func searchUsers() {
+        
+        let url: URL = URL(string: "http://mdpa-adria.azurewebsites.net/login")!
+        var request: URLRequest = URLRequest(url: url)
+        
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpMethod = "POST"
+        let stringPost = "email=a@gm.co&password=a"
+        request.httpBody = stringPost.data(using: String.Encoding.utf8)
+
+        request.timeoutInterval = 60
+        request.httpShouldHandleCookies = false
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                print("error=\(error)")
+                return
+            }
+            
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {           // check for http errors
+                print("statusCode should be 200, but is \(httpStatus.statusCode)")
+                print("response = \(response)")
+            }
+            
+            /*let responseString = String(data: data, encoding: .utf8)
+            print("responseString = \(responseString)")*/
+            
+            do {
+                let decoder = JSONDecoder()
+                let jwt = try decoder.decode(User.JWT.self, from: data)
+                print(jwt.message)
+                print(jwt.jwt)
+                
+            } catch let err {
+                print("Err", err)
+            }
+        }
+        task.resume()
+        
     }
     
 
