@@ -9,35 +9,31 @@
 import UIKit
 
 class RegisterController: UIViewController {
-
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var passwordConfirmText: UITextField!
     
-    @IBOutlet weak var registerButton: UIButton!
-    
     @IBAction func registerClick() {
         
-        if let email = emailText.text , let password1 = passwordText.text,
-            let password2 = passwordConfirmText.text {
+        if let email = emailText.text, let password = passwordText.text,
+            let confirmPassword = passwordConfirmText.text {
             
             if email.isEmpty {
-                 showAlert(message: "Email can't be empty")
+                 showMessageAlert("Email can't be empty")
                 return
             }
-            if password1.isEmpty {
+            if password.isEmpty {
                 
-                showAlert(message: "Password can't be empty")
+                showMessageAlert("Password can't be empty")
                 return
             }
-            if password1 != password2 {
+            if password != confirmPassword {
                 
-                showAlert(message: "Passwords do not match")
+                showMessageAlert("Passwords do not match")
                 return
             }
-            
-             self.performSegue(withIdentifier: "RegisterToMain", sender: self)
+            registerUser(email, password)
         }
     }
     
@@ -45,23 +41,62 @@ class RegisterController: UIViewController {
         navigationItem.title = "Register"
     }
     
-    func showAlert(message: String) {
-        
-        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func showMessageAlert(_ message: String) {
+        
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showLoadingAlert() {
+        let loadingAlert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+        
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        
+        loadingAlert.view.addSubview(loadingIndicator)
+        present(loadingAlert, animated: true, completion: nil)
+    }
+    
+    func registerUser(_ email: String,_ password: String) {
+        showLoadingAlert()
+        
+        Network.instance.registerUser(email, password) { response in
+            
+            DispatchQueue.main.async {
+            
+                self.dismiss(animated: false) {
+                    
+                    switch(response.result) {
+                        
+                    case ApiResult.FAILED:
+                        self.showMessageAlert("Connection error")
+                        
+                    case ApiResult.ERROR:
+                        if (response.errorCode == -1) {
+                            self.showMessageAlert("Something gone wrong")
+                        } else if (response.errorCode == 0) {
+                            self.showMessageAlert("Invalid credentials")
+                        } else if (response.errorCode == 1) {
+                            self.showMessageAlert("This email already exist")
+                        }
+                        
+                    default:
+                        self.performSegue(withIdentifier: "RegisterToMain", sender: self)
+                    }
+                }
+            }
+        }
     }
     
 

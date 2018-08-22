@@ -13,44 +13,25 @@ class LoginController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
-  
-    @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var registerButton: UIButton!
-    
-    
     @IBAction func facebookClick() {
-        
-        
+        // TODO
     }
-    
     
     @IBAction func loginClick() {
         
         if let email = emailText.text , let password = passwordText.text {
+            
             if email.isEmpty {
-                
-                showAlert(message: "email can't be empty")
+                showMessageAlert("email can't be empty")
                 return
             }
             if password.isEmpty {
-                
-                showAlert(message: "password can't be empty")
+                showMessageAlert("password can't be empty")
                 return
             }
-            
             self.performSegue(withIdentifier: "LoginToMain", sender: self)
-            
         }
     }
-    
-    func showAlert(message: String) {
-        
-        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
     
     @IBAction func registerClick() {
         
@@ -61,16 +42,31 @@ class LoginController: UIViewController {
         navigationItem.title = "Login"
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func showMessageAlert(_ message: String) {
+        
+        let alert = UIAlertController(title: message, message: nil, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func showLoadingAlert() {
+        let loadingAlert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
+        
+        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
+        loadingIndicator.hidesWhenStopped = true
+        loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+        loadingIndicator.startAnimating();
+        
+        loadingAlert.view.addSubview(loadingIndicator)
+        present(loadingAlert, animated: true, completion: nil)
     }
     
 

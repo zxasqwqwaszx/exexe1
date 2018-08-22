@@ -98,9 +98,9 @@ class DiscoveryController: UIViewController {
             
             do {
                 let decoder = JSONDecoder()
-                let jwt = try decoder.decode(User.JWT.self, from: data)
-                print(jwt.message)
-                print(jwt.jwt)
+                let response = try decoder.decode(JWTResponse.self, from: data)
+                print(response.message)
+                print(response.jwt)
                 
             } catch let err {
                 print("Err", err)

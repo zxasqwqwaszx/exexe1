@@ -127,10 +127,7 @@
                     <navigationItem key="navigationItem" id="Dlj-rW-xqh"/>
                     <connections>
                         <outlet property="emailText" destination="fXN-bg-fEh" id="GxA-pU-2Xn"/>
-                        <outlet property="facebookButton" destination="I5r-80-GZo" id="Uq0-RZ-EGe"/>
-                        <outlet property="loginButton" destination="x61-ke-sl3" id="5gH-iK-RNA"/>
                         <outlet property="passwordText" destination="l4F-wc-zIV" id="Ful-Lx-ON2"/>
-                        <outlet property="registerButton" destination="9OT-Xs-kgF" id="miV-oY-hTT"/>
                         <segue destination="s46-nR-j5G" kind="show" identifier="LoginToRegister" id="IMo-uM-JUb"/>
                         <segue destination="oLm-y9-db4" kind="showDetail" identifier="LoginToMain" id="pBn-Fj-4G3"/>
                     </connections>
@@ -228,7 +225,6 @@
                         <outlet property="emailText" destination="bZP-V1-oYc" id="gZW-7W-M7f"/>
                         <outlet property="passwordConfirmText" destination="Fa7-du-I1Q" id="dZ6-Wk-P2G"/>
                         <outlet property="passwordText" destination="XAW-pC-Fay" id="jz3-6c-yz3"/>
-                        <outlet property="registerButton" destination="5fj-jv-Iz5" id="qv1-0z-h6E"/>
                         <segue destination="oLm-y9-db4" kind="showDetail" identifier="RegisterToMain" id="Roo-Gj-gOo"/>
                     </connections>
                 </viewController>
@@ -448,6 +444,6 @@
         <image name="profile" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pBn-Fj-4G3"/>
+        <segue reference="Roo-Gj-gOo"/>
     </inferredMetricsTieBreakers>
 </document>
