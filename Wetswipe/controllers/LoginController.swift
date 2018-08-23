@@ -29,12 +29,11 @@ class LoginController: UIViewController {
                 showMessageAlert("password can't be empty")
                 return
             }
-            self.performSegue(withIdentifier: "LoginToMain", sender: self)
+            loginUser(email, password)
         }
     }
     
     @IBAction func registerClick() {
-        
         self.performSegue(withIdentifier: "LoginToRegister", sender: self)
     }
     
@@ -69,7 +68,39 @@ class LoginController: UIViewController {
         present(loadingAlert, animated: true, completion: nil)
     }
     
-
+    func loginUser(_ email: String,_ password: String) {
+        showLoadingAlert()
+        
+        Network.instance.loginUser(email, password) { response in
+            
+            DispatchQueue.main.async {
+                
+                self.dismiss(animated: false) {
+                    
+                    switch(response.result) {
+                        
+                    case ApiResult.FAILED:
+                        self.showMessageAlert("Connection error")
+                        
+                    case ApiResult.ERROR:
+                        if (response.errorCode == -1) {
+                            self.showMessageAlert("Something gone wrong")
+                        } else if (response.errorCode == 0) {
+                            self.showMessageAlert("Invalid credentials")
+                        } else if (response.errorCode == 1) {
+                            self.showMessageAlert("Email not found")
+                        } else if (response.errorCode == 2) {
+                            self.showMessageAlert("Invalid password")
+                        }
+                        
+                    default:
+                        self.performSegue(withIdentifier: "LoginToMain", sender: self)
+                    }
+                }
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -19,6 +19,7 @@
 		E961909D204361F700923242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909C204361F700923242 /* User.swift */; };
 		E961909F204370B300923242 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909E204370B300923242 /* ProfileController.swift */; };
 		E96190A1204370CD00923242 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96190A0204370CD00923242 /* SettingsController.swift */; };
+		E973A563212EAF3000F22FBB /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973A562212EAF3000F22FBB /* CreateProfileController.swift */; };
 		E98301512041544B0053254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301502041544B0053254B /* AppDelegate.swift */; };
 		E98301532041544B0053254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301522041544B0053254B /* ViewController.swift */; };
 		E98301562041544B0053254B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98301542041544B0053254B /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		E961909C204361F700923242 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E961909E204370B300923242 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		E96190A0204370CD00923242 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		E973A562212EAF3000F22FBB /* CreateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
 		E983014D2041544B0053254B /* Wetswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wetswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98301502041544B0053254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E98301522041544B0053254B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				E9619097204320EE00923242 /* EditProfileController.swift */,
 				E961909E204370B300923242 /* ProfileController.swift */,
 				E96190A0204370CD00923242 /* SettingsController.swift */,
+				E973A562212EAF3000F22FBB /* CreateProfileController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				E96190942042F1B900923242 /* DiscoveryController.swift in Sources */,
 				E9619098204320EE00923242 /* EditProfileController.swift in Sources */,
 				E98301532041544B0053254B /* ViewController.swift in Sources */,
+				E973A563212EAF3000F22FBB /* CreateProfileController.swift in Sources */,
 				E90C3DCA212D4BA000E62B40 /* Network.swift in Sources */,
 				E983018220415BFF0053254B /* LoginController.swift in Sources */,
 				E98301512041544B0053254B /* AppDelegate.swift in Sources */,

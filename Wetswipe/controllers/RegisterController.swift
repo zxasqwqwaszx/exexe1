@@ -33,6 +33,7 @@ class RegisterController: UIViewController {
                 showMessageAlert("Passwords do not match")
                 return
             }
+            
             registerUser(email, password)
         }
     }
@@ -71,7 +72,7 @@ class RegisterController: UIViewController {
     func registerUser(_ email: String,_ password: String) {
         showLoadingAlert()
         
-        Network.instance.registerUser(email, password) { response in
+        Network.instance.loginUser(email, password, "/login/register") { response in
             
             DispatchQueue.main.async {
             
@@ -92,7 +93,7 @@ class RegisterController: UIViewController {
                         }
                         
                     default:
-                        self.performSegue(withIdentifier: "RegisterToMain", sender: self)
+                        self.performSegue(withIdentifier: "RegisterToProfile", sender: self)
                     }
                 }
             }

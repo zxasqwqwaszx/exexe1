@@ -8,10 +8,14 @@
 
 import Foundation
 
+struct ErrorModel: Decodable {
+    
+    let errorCode: Int
+}
+
 struct UserCredentials: Codable {
     
     let email: String
-    
     let password: String
 }
 
@@ -21,7 +25,19 @@ struct JWTResponse: Decodable {
     let jwt: String
 }
 
-struct ErrorModel: Decodable {
+struct UserProfile: Codable {
     
-    let errorCode: Int
+    let name: String
+    let age: Int
+    let sex: String
+    let lookFor: String
+    
+    let minAge: Int
+    let maxAge: Int
+
+    let description: String;
+    let currentWork: String;
+    let college: String;
+    let favoriteSong: String
+
 }
