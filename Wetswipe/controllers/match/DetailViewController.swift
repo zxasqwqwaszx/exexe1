@@ -1,19 +1,15 @@
 //
-//  EditProfileController.swift
+//  DetailViewController.swift
 //  Wetswipe
 //
-//  Created by Adrià Bosch Saez on 25/02/2018.
+//  Created by Adrià Bosch Saez on 08/09/2018.
 //  Copyright © 2018 Adrià Bosch Saez. All rights reserved.
 //
 
 import UIKit
 
-class EditProfileController: UIViewController {
+class DetailViewController: ViewController {
 
-    override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "Edit profile"
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
