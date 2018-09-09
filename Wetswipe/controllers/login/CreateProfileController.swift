@@ -15,10 +15,12 @@ class CreateProfileController: UIViewController {
     @IBOutlet weak var sexSegmented: UISegmentedControl!
     @IBOutlet weak var lookForSegmented: UISegmentedControl!
     @IBOutlet weak var descriptionText: UITextView!
-    @IBOutlet weak var collegeText: UITextField!
     @IBOutlet weak var workText: UITextField!
+    @IBOutlet weak var collegeText: UITextField!
     @IBOutlet weak var songText: UITextField!
 
+    private let wetswipeApi = WetswipeApi.instance
+    
     @IBAction func saveProfileClick(_ sender: Any) {
         
         guard let name = nameText.text else {
@@ -75,17 +77,17 @@ class CreateProfileController: UIViewController {
             lookFor = "both"
         }
         
-        let userProfile = UserProfile(
+        let userProfile = CreateProfile(
             name: name,
             age: age,
             sex: sex,
             lookFor: lookFor,
             minAge: 18,
             maxAge: 60,
-            description: "",
-            currentWork: "",
-            college: "",
-            favoriteSong: "")
+            description: descriptionText.text,
+            currentWork: workText.text!,
+            college: collegeText.text!,
+            favoriteSong: songText.text!)
         
         createProfile(userProfile)
     }
@@ -121,10 +123,10 @@ class CreateProfileController: UIViewController {
         present(loadingAlert, animated: true, completion: nil)
     }
     
-    func createProfile(_ userProfile: UserProfile) {
+    func createProfile(_ userProfile: CreateProfile) {
         
         showLoadingAlert()
-        Network.instance.updateUser(userProfile) { response in
+        wetswipeApi.createProfile(userProfile) { response in
             
             DispatchQueue.main.async {
                 

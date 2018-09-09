@@ -13,6 +13,8 @@ class LoginController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
+    private let wetswipeApi = WetswipeApi.instance
+    
     @IBAction func facebookClick() {
         // TODO
     }
@@ -71,7 +73,7 @@ class LoginController: UIViewController {
     func loginUser(_ email: String,_ password: String) {
         showLoadingAlert()
         
-        Network.instance.loginUser(email, password) { response in
+        wetswipeApi.loginUser(email, password) { response in
             
             DispatchQueue.main.async {
                 

@@ -10,15 +10,15 @@
 		01BB207FEABD53088120154D /* Pods_WetswipeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C2221179C7AB9D1E57C8FE /* Pods_WetswipeUITests.framework */; };
 		B541DD9B74B8BD8C09B5E626 /* Pods_Wetswipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D489C07748882A0DB47024 /* Pods_Wetswipe.framework */; };
 		D21ADF360C610BB3CD4ABB9B /* Pods_WetswipeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BFC091520E4C3D13CF1824 /* Pods_WetswipeTests.framework */; };
-		E90C3DCA212D4BA000E62B40 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C3DC9212D4BA000E62B40 /* Network.swift */; };
+		E904D88F21430E4700023605 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E904D88E21430E4700023605 /* MatchesViewController.swift */; };
+		E904D892214326E700023605 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E904D891214326E700023605 /* MatchCell.swift */; };
 		E90C3DCC212D62AD00E62B40 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C3DCB212D62AD00E62B40 /* ApiResponse.swift */; };
 		E90C3DD0212D790D00E62B40 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C3DCF212D790D00E62B40 /* ApiResult.swift */; };
+		E926BBD92141B84E008E9673 /* WetswipeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926BBD82141B84E008E9673 /* WetswipeApi.swift */; };
+		E94D753F2143E0FD002DADCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94D753E2143E0FD002DADCA /* DetailViewController.swift */; };
 		E9547787212C5E7F0078A569 /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9547786212C5E7F0078A569 /* NetworkModels.swift */; };
 		E96190942042F1B900923242 /* DiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96190932042F1B900923242 /* DiscoveryController.swift */; };
-		E9619098204320EE00923242 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9619097204320EE00923242 /* EditProfileController.swift */; };
-		E961909D204361F700923242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909C204361F700923242 /* User.swift */; };
 		E961909F204370B300923242 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961909E204370B300923242 /* ProfileController.swift */; };
-		E96190A1204370CD00923242 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96190A0204370CD00923242 /* SettingsController.swift */; };
 		E973A563212EAF3000F22FBB /* CreateProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E973A562212EAF3000F22FBB /* CreateProfileController.swift */; };
 		E98301512041544B0053254B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301502041544B0053254B /* AppDelegate.swift */; };
 		E98301532041544B0053254B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98301522041544B0053254B /* ViewController.swift */; };
@@ -58,15 +58,15 @@
 		DE6502CBC415C5F5CAE4DF94 /* Pods-WetswipeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WetswipeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WetswipeTests/Pods-WetswipeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0D489C07748882A0DB47024 /* Pods_Wetswipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wetswipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C2221179C7AB9D1E57C8FE /* Pods_WetswipeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WetswipeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E90C3DC9212D4BA000E62B40 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E904D88E21430E4700023605 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		E904D891214326E700023605 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
 		E90C3DCB212D62AD00E62B40 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		E90C3DCF212D790D00E62B40 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		E926BBD82141B84E008E9673 /* WetswipeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetswipeApi.swift; sourceTree = "<group>"; };
+		E94D753E2143E0FD002DADCA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E9547786212C5E7F0078A569 /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
 		E96190932042F1B900923242 /* DiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
-		E9619097204320EE00923242 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
-		E961909C204361F700923242 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E961909E204370B300923242 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		E96190A0204370CD00923242 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E973A562212EAF3000F22FBB /* CreateProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileController.swift; sourceTree = "<group>"; };
 		E983014D2041544B0053254B /* Wetswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wetswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98301502041544B0053254B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,20 +126,55 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E904D8902143266A00023605 /* match */ = {
+			isa = PBXGroup;
+			children = (
+				E904D88E21430E4700023605 /* MatchesViewController.swift */,
+				E904D891214326E700023605 /* MatchCell.swift */,
+				E94D753E2143E0FD002DADCA /* DetailViewController.swift */,
+			);
+			path = match;
+			sourceTree = "<group>";
+		};
 		E90C3DC8212D4AE900E62B40 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				E90C3DC9212D4BA000E62B40 /* Network.swift */,
 				E90C3DCB212D62AD00E62B40 /* ApiResponse.swift */,
 				E90C3DCF212D790D00E62B40 /* ApiResult.swift */,
+				E926BBD82141B84E008E9673 /* WetswipeApi.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		E913CCB7213F22E1009FE983 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				E973A562212EAF3000F22FBB /* CreateProfileController.swift */,
+				E983017E2041555F0053254B /* RegisterController.swift */,
+				E983018120415BFF0053254B /* LoginController.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		E91E4A152144546E007E92B8 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				E961909E204370B300923242 /* ProfileController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		E91E4A1621445483007E92B8 /* discovery */ = {
+			isa = PBXGroup;
+			children = (
+				E96190932042F1B900923242 /* DiscoveryController.swift */,
+			);
+			path = discovery;
 			sourceTree = "<group>";
 		};
 		E961909920435C0300923242 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				E961909C204361F700923242 /* User.swift */,
 				E9547786212C5E7F0078A569 /* NetworkModels.swift */,
 			);
 			path = models;
@@ -204,13 +239,10 @@
 		E9830180204155730053254B /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E983018120415BFF0053254B /* LoginController.swift */,
-				E983017E2041555F0053254B /* RegisterController.swift */,
-				E96190932042F1B900923242 /* DiscoveryController.swift */,
-				E9619097204320EE00923242 /* EditProfileController.swift */,
-				E961909E204370B300923242 /* ProfileController.swift */,
-				E96190A0204370CD00923242 /* SettingsController.swift */,
-				E973A562212EAF3000F22FBB /* CreateProfileController.swift */,
+				E91E4A1621445483007E92B8 /* discovery */,
+				E91E4A152144546E007E92B8 /* profile */,
+				E904D8902143266A00023605 /* match */,
+				E913CCB7213F22E1009FE983 /* login */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -523,18 +555,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9547787212C5E7F0078A569 /* NetworkModels.swift in Sources */,
-				E96190A1204370CD00923242 /* SettingsController.swift in Sources */,
+				E94D753F2143E0FD002DADCA /* DetailViewController.swift in Sources */,
+				E926BBD92141B84E008E9673 /* WetswipeApi.swift in Sources */,
 				E96190942042F1B900923242 /* DiscoveryController.swift in Sources */,
-				E9619098204320EE00923242 /* EditProfileController.swift in Sources */,
 				E98301532041544B0053254B /* ViewController.swift in Sources */,
 				E973A563212EAF3000F22FBB /* CreateProfileController.swift in Sources */,
-				E90C3DCA212D4BA000E62B40 /* Network.swift in Sources */,
+				E904D892214326E700023605 /* MatchCell.swift in Sources */,
 				E983018220415BFF0053254B /* LoginController.swift in Sources */,
 				E98301512041544B0053254B /* AppDelegate.swift in Sources */,
 				E983017F204155600053254B /* RegisterController.swift in Sources */,
 				E90C3DCC212D62AD00E62B40 /* ApiResponse.swift in Sources */,
 				E90C3DD0212D790D00E62B40 /* ApiResult.swift in Sources */,
-				E961909D204361F700923242 /* User.swift in Sources */,
+				E904D88F21430E4700023605 /* MatchesViewController.swift in Sources */,
 				E961909F204370B300923242 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

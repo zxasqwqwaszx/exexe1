@@ -14,6 +14,8 @@ class RegisterController: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var passwordConfirmText: UITextField!
     
+    private let wetswipeApi = WetswipeApi.instance
+    
     @IBAction func registerClick() {
         
         if let email = emailText.text, let password = passwordText.text,
@@ -72,7 +74,7 @@ class RegisterController: UIViewController {
     func registerUser(_ email: String,_ password: String) {
         showLoadingAlert()
         
-        Network.instance.loginUser(email, password, "/login/register") { response in
+        wetswipeApi.loginUser(email, password, "/login/register") { response in
             
             DispatchQueue.main.async {
             

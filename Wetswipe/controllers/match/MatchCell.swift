@@ -10,6 +10,11 @@ import UIKit
 
 class MatchCell: UITableViewCell {
 
+    @IBOutlet weak var matchImage: UIImageView!
+    @IBOutlet weak var nameText: UILabel!
+    @IBOutlet weak var ageText: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

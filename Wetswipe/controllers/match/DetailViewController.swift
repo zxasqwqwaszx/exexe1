@@ -8,12 +8,36 @@
 
 import UIKit
 
-class DetailViewController: ViewController {
+class DetailViewController: UIViewController {
 
+    @IBOutlet weak var nameAgeText: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var descriptionText: UILabel!
+    @IBOutlet weak var workText: UILabel!
+    @IBOutlet weak var collegeText: UILabel!
+    @IBOutlet weak var favoriteSongText: UILabel!
+    
+    var match: Match? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Detail"
+        
+        
+        if let match = match {
+            
+            nameAgeText.text = match.name + ", " + String(match.age)
+            if (match.photos.count > 0) {
+                imageView.sd_setImage(with: URL(string: match.photos[0]))
+            } else {
+                imageView.sd_setImage(with: URL(string: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973461_960_720.png"))
+            }
+            descriptionText.text = match.description
+            workText.text = match.currentWork
+            collegeText.text = match.college
+            favoriteSongText.text = match.favoriteSong
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
